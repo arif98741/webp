@@ -1,0 +1,32 @@
+{
+    "name": "xenon/webp",
+    "description": "Xenon webp is a tiny package for converting your image to webp before saving to storage along with resizing options",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ariful islam",
+            "email": "arif98741@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "ext-gd": "*",
+        "php": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xenon\\Webp\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xenon\\Webp\\WebpServiceProvider"
+            ],
+            "aliases": {
+                "SMS": "Xenon\\LaravelBDSms\\Facades\\SMS"
+            }
+        }
+    }
+}
